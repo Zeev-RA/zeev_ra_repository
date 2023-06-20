@@ -1,0 +1,388 @@
+1) Посмотреть где я: pwd
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1
+$ pwd
+/d/35group
+--------------------------------------------------------------------------------------
+2) Создать папку: mkdir
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1
+$ mkdir testdir
+
+$ ls -la
+total 1301
+drwxr-xr-x 1 Romanblch 197121       0 Jun 13 16:45  ./
+drwxr-xr-x 1 Romanblch 197121       0 Jun 12 19:37  ../
+drwxr-xr-x 1 Romanblch 197121       0 Jun 13 16:45  testdir/
+--------------------------------------------------------------------------------------
+3) Зайти в папку: cd  
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1
+$ cd testdir
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$
+--------------------------------------------------------------------------------------
+4) Создать 3 папки: mkdir
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ mkdir testdir1 testdir2 testdir3
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ ls -la
+total 4
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:49 ./
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:45 ../
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:49 testdir1/
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:49 testdir2/
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:49 testdir3/
+--------------------------------------------------------------------------------------
+5) Зайти в любоую папку: cd
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ cd testdir1
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$
+--------------------------------------------------------------------------------------
+6) Создать 5 файлов (3 txt, 2 json): touch
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$ touch test1.txt test2.txt test3.txt test1.json test2.json
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$ ls -la
+total 0
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:53 ./
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:49 ../
+-rw-r--r-- 1 Romanblch 197121 0 Jun 13 16:53 test1.json
+-rw-r--r-- 1 Romanblch 197121 0 Jun 13 16:53 test1.txt
+-rw-r--r-- 1 Romanblch 197121 0 Jun 13 16:53 test2.json
+-rw-r--r-- 1 Romanblch 197121 0 Jun 13 16:53 test2.txt
+-rw-r--r-- 1 Romanblch 197121 0 Jun 13 16:53 test3.txt
+--------------------------------------------------------------------------------------
+7) Создать 3 папки: mkdir
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$ pwd
+/d/35group/1/testdir/testdir1
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$ cd ..
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ mkdir temp1 temp2 temp3
+--------------------------------------------------------------------------------------
+8) Вывести список содержимого папки:ls -la
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ ls -la
+total 4
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:55 ./
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:45 ../
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:55 temp1/
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:55 temp2/
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:55 temp3/
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:53 testdir1/
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:49 testdir2/
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:49 testdir3/
+--------------------------------------------------------------------------------------
+9) + Открыть любой txt файл: cat
+10) + написать туда что-нибудь, любой текст.
+11) + сохранить и выйти.
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ cat > testdir1/test1.txt
+raz
+dva
+tri
+chetire
+pyatb
+shestb
+semb
+vosemb
+devyatb
+desyatb
+error
+odinadcatb
+vdenadcatb
+error
+sorok
+tridcatb
+dvadcatb
+error
+sto
+
+--------------
+>Ctrl+D
+--------------------------------------------------------------------------------------
+12) Выйти из папки на уровень выше: cd ..
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ cd ..
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1
+$
+
+--------------------------------------------------------------------------------------
+13) переместить любые 2 файла, которые вы создали, в любую другую папку: mv
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ cd testdir1
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$ mv test1.json test2.json /d/35group/1/testdir/testdir2/
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$ cd ..
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ cd testdir2
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir2
+$ ls -la
+total 0
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 17:16 ./
+drwxr-xr-x 1 Romanblch 197121 0 Jun 13 16:55 ../
+-rw-r--r-- 1 Romanblch 197121 0 Jun 13 16:53 test1.json
+-rw-r--r-- 1 Romanblch 197121 0 Jun 13 16:53 test2.json
+--------------------------------------------------------------------------------------
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку:cp
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir2
+$ cd ..
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ cp testdir1/test1.txt testdir1/test2.txt testdir1/test3.txt temp1/
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ cd temp1
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/temp1
+$ ls -la
+total 1
+drwxr-xr-x 1 Romanblch 197121  0 Jun 13 17:25 ./
+drwxr-xr-x 1 Romanblch 197121  0 Jun 13 16:55 ../
+-rw-r--r-- 1 Romanblch 197121 83 Jun 13 17:25 test1.txt
+-rw-r--r-- 1 Romanblch 197121  0 Jun 13 17:25 test2.txt
+-rw-r--r-- 1 Romanblch 197121  0 Jun 13 17:25 test3.txt
+--------------------------------------------------------------------------------------
+15) Найти файл по имени: find
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ cd temp1
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/temp1
+$ find *.txt
+test1.txt
+test2.txt
+test3.txt
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/temp1
+$ cd ..
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ find -name *.txt
+./temp1/test1.txt
+./temp1/test2.txt
+./temp1/test3.txt
+./testdir1/test1.txt
+./testdir1/test2.txt
+./testdir1/test3.txt
+
+--------------------------------------------------------------------------------------
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$ grep -n error test1.txt
+11:error
+14:error
+18:error
+20:error ===
+21:error
+22:error stopyatsot
+
+------------------------------------------- в связке c tail
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$ tail -f test1.txt | grep -n error
+1:error
+5:error
+7:error ===
+8:error
+9:error stopyatsot
+
+
+--------------------------------------------------------------------------------------
+17) вывести несколько первых строк из текстового файла: head
+18) вывести несколько последних строк из текстового файла: tail
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$ head test1.txt
+raz
+dva
+tri
+chetire
+pyatb
+shestb
+semb
+vosemb
+devyatb
+desyatb
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/testdir1
+$ tail test1.txt
+desyatb
+error
+odinadcatb
+vdenadcatb
+error
+sorok
+tridcatb
+dvadcatb
+error
+sto
+
+
+--------------------------------------------------------------------------------------
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает:
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ less testdir1/test1.txt
+
+Результат:
+raz
+dva
+tri
+chetire
+pyatb
+shestb
+semb
+vosemb
+devyatb
+desyatb
+odinadcatb
+dvenadcatb
+testdir1/test1.txt (END)
+
+--------------------------------------------------------------------------------------
+20) вывести дату и время: date
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir/temp1
+$ date
+Tue Jun 13 17:33:15 RTZ 2023
+
+
+======================================================================================
+
+Задание *
+1) Отправить http запрос на сервер: curl
+http://162.55.220.72:5005/terminal-hw-request
+
+Romanblch@Romanblch-PC MINGW64 /d/35group/1/testdir
+$ curl http://162.55.220.72:5006/terminal-hw-request
+{
+  "Intro": "Hello!! This is your the first response from server",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+    ]
+  }
+}
+
+curl "http://162.55.220.72:5005/get_method?name=roman&age=40"
+[
+  "roman",
+  "40"
+]
+[1]+  Done                    curl http://162.55.220.72:5005/get_method?name=roman
+
+--------------------------------------------------------------------------------------
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+
+#!/bin/bash
+cd /d/35group/1/testdir
+mkdir testdir1 testdir2 testdir3
+cd /d/35group/1/testdir/testdir1
+touch test1.txt test2.txt test3.txt test1.json test2.json
+cd ..
+mkdir temp1 temp2 temp3
+ls -la
+cd testdir1
+mv test1.json test2.json /d/35group/1/testdir/testdir2/
+cd ..
+cd testdir2
+ls -la
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
